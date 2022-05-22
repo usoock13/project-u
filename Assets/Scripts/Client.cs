@@ -36,7 +36,8 @@ public class Client : MonoBehaviour
 
     public void ConnectRelay() {
         try {
-            socketConnection = new TcpClient("127.0.0.1", 6001);
+            socketConnection = new TcpClient("125.190.241.9", 6000);
+            //socketConnection = new TcpClient("127.0.0.1", 6001);
         } catch (Exception e) {
             Debug.LogError("Throwed exception on connecting server : " + e);
         }
